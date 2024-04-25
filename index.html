@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Pokémon</title>
+    <link rel="stylesheet" href="spa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  
+
+    
+    <div class="card">
+        <div class="inner-card">
+            <div class="base-info">
+             <p id="score">Score: 0</p>
+                <p></p>
+            </div>
+            <hr class="first-hr">
+            <div class="title">
+                <h3>Guess The Pokemon </h3>
+                <img src="http://res.cloudinary.com/bpettis/image/upload/v1516916046/firetype_otgmwq.png" alt="fire type" height="20px" width="20px">
+            </div>
+    
+            <input type="text" id="guess-input" placeholder="Enter your guess">
+            <div class="banner">
+       
+            </div>
+            <div class="main-text">
+                <p><span>Welcome Trainer!</span>Are you ready to embark on a journey to become the greatest Pokémon Master? Challenge yourself and test your knowledge in the ultimate Pokémon guessing game!</p>
+            </div>
+            <hr class="second-hr">
+            <div class="stats">
+                <div class="fire-grid">
+                    <img src="http://res.cloudinary.com/bpettis/image/upload/v1516916046/firetype_otgmwq.png" alt="fire emblem" width="15px" height="15px">
+                    <img src="http://res.cloudinary.com/bpettis/image/upload/v1516916046/firetype_otgmwq.png" alt="fire emblem" width="15px" height="15px">
+                    <img src="http://res.cloudinary.com/bpettis/image/upload/v1516916046/firetype_otgmwq.png" alt="fire emblem" width="15px" height="15px">
+                    <img src="http://res.cloudinary.com/bpettis/image/upload/v1516916046/firetype_otgmwq.png" alt="fire emblem" width="15px" height="15px">
+                </div>
+                <p class="stats-main"> <button id="submit-button" onclick="checkGuess()">Submit</button><span>  <button id="newPokemon-button" onclick="getNewPokemon()">Next Pokémon</button></span></p>
+                <p class="stats-main"><span> </span></p>
+                <p class="stats-num"><span></span></p>
+      
+            </div>
+            
+            <p id="result"></p>
+        
+            </div>
+      
+        </div>
+    </div>
+</div>
+    
+    <div class="gameboy" id="GameBoy">
+        <div class="screen-area">
+            <div class="power">
+                <div class="indicator">
+                    <div class="led"></div>
+                    <span class="arc" style="z-index:2"></span>
+                    <span class="arc" style="z-index:1"></span>
+                    <span class="arc" style="z-index:0"></span>
+                </div>
+                POWER
+            </div>
+            <canvas class="display" id="mainCanvas"></canvas>
+            <div id="poke-container">
+                <img id="poke-image" src="" alt="Pokémon Image">
+            </div>
+            <div class="label">
+                <div class="outro">GAME BOY</div>
+                <div class="subtitle">
+                    <span class="c">C</span><!--
+                    --><span class="o1">O</span><!--
+                    --><span class="l">L</span><!--
+                    --><span class="o2">O</span><!--
+                    --><span class="r">R</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nintendo">Nintendo</div>
+        
+        <div class="controls">
+            <div class="dpad">
+                <div class="up"><i class="fa fa-caret-up"></i></div>
+                <div class="right"><i class="fa fa-caret-right"></i></div>
+                <div class="down"><i class="fa fa-caret-down"></i></div>
+                <div class="left"><i class="fa fa-caret-left"></i></div>
+                <div class="middle"></div>
+            </div>
+            <div class="a-b">
+                <div class="b"id="gen-button2">B</div>
+                <div class="a" id="gen-button">A</div>
+            </div>
+        </div>
+        
+        <div class="start-select">
+            <div class="select" id="dig-button">SELECT</div>
+            <div class="start">START</div>
+        </div>
+        
+        <div class="speaker"></div>
+    </div>
+    
+    <script src="./spa.js" type="module"></script>
+
+ 
+ 
+    
+
+</body>
+
+</html>
+
+
