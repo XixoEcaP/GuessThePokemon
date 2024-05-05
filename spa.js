@@ -265,3 +265,10 @@ window.addEventListener("load", () => {
       getNewPokemon();
     }
   });
+  var music = document.getElementById("music");
+
+// When the audio ends, restart it
+music.addEventListener("ended", function() {
+    this.currentTime = 0; // Reset the audio to the beginning
+    this.play(); // Start playing again
+});
