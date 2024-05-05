@@ -1,13 +1,6 @@
 
 
 
-
-
-// Get the route name from the URL
-
-
-///////////////
-
 let pokemonName = '';
 let pokemonImage = '';
 let correctAnswer = false;

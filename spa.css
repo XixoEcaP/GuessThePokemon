@@ -774,8 +774,8 @@ body {
     transform: scale(0.65);
   }
   #result {
-    margin-top: 5%; /* Adjust margin-top as needed */
-    font-size: 14px; /* Adjust font-size as needed */
+    margin-top: 4%; /* Adjust margin-top as needed */
+    font-size: 12px; /* Adjust font-size as needed */
   }
 
   .gameboy {
